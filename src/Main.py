@@ -4,11 +4,10 @@ from flask import Flask
 app = Flask(__name__)
 
 # Blueprint imports
-from auth import auth
+from info import info
 
 # Registering blueprints
-app.register_blueprint(auth, url_prefix="/auth")
-app.register_blueprint(user, url_prefix="/User")
+app.register_blueprint(info)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5500)
+    app.run(host="0.0.0.0", port=5502)
