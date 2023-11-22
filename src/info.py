@@ -7,5 +7,9 @@ info = Blueprint("info", __name__)
 SessionInstance = Session()
 
 @info.route("/", methods=['POST', 'GET'])
-def register():
+def home():
     return render_template("index.html")
+
+@info.route("/About", methods=["POST", "GET"])
+def about():
+    return render_template("about.html")
