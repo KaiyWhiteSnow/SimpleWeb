@@ -10,6 +10,12 @@ SessionInstance = Session()
 def home():
     return render_template("index.html")
 
-@info.route("/About", methods=["POST", "GET"])
+
+@info.route("/join", methods=["POST", "GET"])
+def about():
+    return render_template("join.html")
+
+
+@info.route("/about", methods=["POST", "GET"])
 def about():
     return render_template("about.html")
