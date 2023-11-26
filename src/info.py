@@ -12,7 +12,7 @@ def home():
 
 
 @info.route("/join", methods=["POST", "GET"])
-def about():
+def join():
     return render_template("join.html")
 
 
