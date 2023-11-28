@@ -9,6 +9,7 @@
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
+    <script src="https://kit.fontawesome.com/2aac6f8878.js" crossorigin="anonymous"></script>
 
     <style>
         body {
@@ -30,59 +31,38 @@
     </header>
     
     <div class="parOffset d-flex justify-content-center" style="padding: 10px;">
-        <h3>
+        <h3 style="padding: 10px;">
             How to apply to join us?
         </h3>
     </div>
-    <div class="d-flex justify-content-center" style="margin-bottom: 10px;">
-        <p class="text-center">
-            Our server is <c style="font-weight: bold;">whitelisted</c>. To join, you must join our <a href="https://discord.gg/7z3gGZbMm3">Discord</a> and fill out this <a href="https://forms.gle/Fe7mECgdyB7SBKHX9">form</a> to have a chance to get in!
-        </p>
-    </div>
     <div class="container">
-        <div class="accordion" id="myAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. Join discord</button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                    <div class="card-body">
-                        <p>
-                            In order to join our server, you must join our <a href="https://discord.gg/7z3gGZbMm3" target="_blank">Discord server.</a>
-                        </p>
-                        <p>
-                            There, you may look around, and when you're ready to apply, go into channel rules-info-applications and click on the google form as you can see in picture below.
-                        </p>
-                    </div>
+
+        <div class="row">
+            <div class="col-md-6" style="margin-bottom: 20px;">
+                <div class="text-left" style="padding: 15px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                    <h5>
+                        Join our discord! <i class="fa-brands fa-discord"></i>
+                    </h5>
+                    <p class="text-wrap">
+                        Our <a href="https://discord.gg/7z3gGZbMm3">discord server</a> is where we manage our community. You can also find a form there to apply to join us.
+                    </p>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. Bootstrap</button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                    <div class="card-body">
-                        <p>
-                            Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. CSS</button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                    <div class="card-body">
-                        <p>
-                            CSS stands for Cascading Style Sheet. It allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts, etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a>
-                        </p>
-                    </div>
+            <div class="col-md-6" style="margin-bottom: 20px;">
+                <div class="text-left" style="padding: 15px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                    <h5>
+                        Make a form! <i class="fa-solid fa-envelope"></i>
+                    </h5>
+                    <p class="text-wrap">
+                        In channel rules-info-applications, you can find a form. Fill it and send it over to us. We will do the rest for you.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
-    
+        <div class="d-flex justify-content-center" style="padding: 13px;">
+            <img src="/static/img/join.png" width="740" height="480">
+        </div>
+    </div> 
     
     <footer class="text-center text-lg-start text-white" style="background-color: #3e4551">
         <div class="container text-center p-4 pb-0">
