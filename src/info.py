@@ -14,8 +14,3 @@ def home():
 @info.route("/join", methods=["POST", "GET"])
 def join():
     return render_template("join.html")
-
-
-@info.route("/about", methods=["POST", "GET"])
-def about():
-    return render_template("about.html")
