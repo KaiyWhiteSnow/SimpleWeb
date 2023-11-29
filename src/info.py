@@ -6,11 +6,15 @@ info = Blueprint("info", __name__)
 
 SessionInstance = Session()
 
-@info.route("/", methods=['POST', 'GET'])
+@info.route("/", methods=["GET"])
 def home():
     return render_template("index.html")
 
 
-@info.route("/join", methods=["POST", "GET"])
+@info.route("/join", methods=["GET"])
 def join():
     return render_template("join.html")
+
+@info.route("/faq", methods=["GET"])
+def faq():
+    return render_template("faq.html")
